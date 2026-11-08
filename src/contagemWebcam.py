@@ -36,9 +36,9 @@ ids_contabilizados = set()
 # INICIAR WEBCAM E RASTREAMENTO
 # ==========================================
 
-# source é qual câmera usar. 0 = webcam do computador, 1 = webcam externa
+# source é qual câmera usar. 0 = webcam externa, 1 = webcam do computador
 resultados = modelo.track(
-    source=1,
+    source=0,
     stream=True,
     persist=True,
     tracker="bytetrack.yaml",

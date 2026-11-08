@@ -29,6 +29,11 @@ https://scispace.com/share/70521f6a-edf4-486b-9e26-b85162f08b52
 | mAP50 | 0.9694 |
 | mAP50-95 | 0.5637 |
 
+Observações:
+- Apesar de uma tentativa falha da Microsoft/Bill Gates de sabotar meu TCC, consegui jogar no GitHub e derrotar essa corporação maldita
+- O modelo não reconheceu pessoas direito, apenas o Pereba. Às vezes reconhecia uma cabeça, mas não era muito consistente. Acho que o problema é mais o dataset do que qualquer outra coisa, que pega as imagens muito de cima. A câmera estava a ~2.60m de distância do chão, sendo que o ideal é ~2.10m, e mesmo com a distância maior, não teve um resultado muito bom
+- Chupa Bill Gates
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 
