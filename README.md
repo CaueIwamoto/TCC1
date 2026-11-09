@@ -35,6 +35,7 @@ Observações:
 - Chupa Bill Gates
 
 <br>
+
 ### Modelo 2
 
 | Parâmetro | Valor utilizado |
