@@ -10,9 +10,9 @@ ARQUIVO_DATASET = "dataset/data.yaml"
 
 MODELO_INICIAL = "yolo11n.pt"
 
-EPOCAS = 15
+EPOCAS = 30
 
-TAMANHO_IMAGEM = 320
+TAMANHO_IMAGEM = 480
 
 BATCH_SIZE = 2
 
@@ -54,7 +54,7 @@ resultado = modelo.train(
 
     project="runs",
 
-    name="overhead_person_i3",
+    name="Modelo2",
 
     plots=True,
 
@@ -77,10 +77,10 @@ print("================================")
 
 print(
     "Melhor modelo: "
-    "runs/detect/overhead_person_i3/weights/best.pt"
+    "runs/detect/Modelo2/weights/best.pt"
 )
 
 print(
     "Último modelo: "
-    "runs/detect/overhead_person_i3/weights/last.pt"
+    "runs/detect/Modelo2/weights/last.pt"
 )

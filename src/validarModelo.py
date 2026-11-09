@@ -3,13 +3,13 @@
 from ultralytics import YOLO
 
 modelo = YOLO(
-    "runs/detect/runs/overhead_person_i3/weights/best.pt"
+    "runs/detect/runs/Modelo2/weights/best.pt"
 )
 
 resultados = modelo.val(
     data="dataset/data.yaml",
     split="test",
-    imgsz=320,
+    imgsz=480,
     batch=2,
     device="cpu",
     workers=0

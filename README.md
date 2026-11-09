@@ -34,6 +34,28 @@ Observações:
 - O modelo não reconheceu pessoas direito, apenas o Pereba. Às vezes reconhecia uma cabeça, mas não era muito consistente. Acho que o problema é mais o dataset do que qualquer outra coisa, que pega as imagens muito de cima. A câmera estava a ~2.60m de distância do chão, sendo que o ideal é ~2.10m, e mesmo com a distância maior, não teve um resultado muito bom
 - Chupa Bill Gates
 
+<br>
+### Modelo 2
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Overhead Person Model  |
+| Modelo  | YOLO11n  |
+| Épocas | 30 |
+| Tamanho da Imagem | 480 |
+| Batch Size | 2 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.9639 |
+| Recall | 0.9612 |
+| mAP50 | 0.9759 |
+| mAP50-95 | 0.6166 |
+
+Observações:
+- Dobrei o número de épocas e aumentei a resolução e mesmo assim não reconhece uma pessoa. Isso indica que o problema realmente é o dataset, e não os parâmetros
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 
