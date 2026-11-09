@@ -1,11 +1,10 @@
-# Gerar resultados após passar pelo conjunto de teste
 
 from ultralytics import YOLO
 
-modelo = YOLO(
-    "runs/detect/runs/Modelo2/weights/best.pt"
-)
+# Carregar o melhor modelo treinado
+modelo = YOLO("runs/detect/runs/Modelo2/weights/best.pt")
 
+# Realizar validação no conjunto de teste
 resultados = modelo.val(
     data="dataset/data.yaml",
     split="test",
@@ -15,11 +14,14 @@ resultados = modelo.val(
     workers=0
 )
 
+# Obter métricas
+precision = resultados.box.mp
+recall = resultados.box.mr
+f1_score = 2 * (precision * recall) / (precision + recall)
+
+# Exibir resultados
 print("\n========== RESULTADOS ==========")
-
-print(f"Precision: {resultados.box.mp:.4f}")
-print(f"Recall: {resultados.box.mr:.4f}")
-print(f"mAP50: {resultados.box.map50:.4f}")
-print(f"mAP50-95: {resultados.box.map:.4f}")
-
+print(f"Precision: {precision:.4f}")
+print(f"Recall:    {recall:.4f}")
+print(f"F1-score:  {f1_score:.4f}")
 print("================================")
