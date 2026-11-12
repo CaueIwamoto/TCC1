@@ -63,3 +63,6 @@ Observações:
 [Human Detection Top View](https://universe.roboflow.com/paras-rxcr4/human-detection-top-view)
 
 [Overhead Person Model](https://universe.roboflow.com/riccardo-kxtut/overhead-person-szky0)
+
+## Site de anotação
+[annotation.photo](https://annotate.photo/)
