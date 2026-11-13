@@ -57,6 +57,29 @@ Observações:
 Observações:
 - Dobrei o número de épocas e aumentei a resolução e mesmo assim não reconhece uma pessoa. Isso indica que o problema realmente é o dataset, e não os parâmetros
 
+<br>
+
+### Modelo 3
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person (Dataset próprio) |
+| Modelo  | YOLO11n  |
+| Épocas | 10 |
+| Tamanho da Imagem | 320 |
+| Batch Size | 2 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.8262 |
+| Recall | 0.5882 |
+| F1-score | 0.6872 |
+
+Observações:
+- Esse foi nosso primeiro modelo que usa um dataset próprio. Fiz com poucas épocas, batch, etc. porque só queria testar se era eficaz
+- Os resultados não foram muito bons. Toda hora, o modelo detectava várias pessoas em um mesmo lugar, quando realmente havia apenas uma. Mesmo assim, foi bom para ver que um dataset próprio provavelmente é a solução
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 

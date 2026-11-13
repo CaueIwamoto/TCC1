@@ -4,9 +4,9 @@
 import cv2
 import os
 
-VIDEO = "./videoTeste.mp4"
+VIDEO = "./videoDatasetBruto.mp4"
 PASTA_SAIDA = "imagens_brutas"
-INTERVALO_SEGUNDOS = 1
+INTERVALO_SEGUNDOS = 0.5
 
 os.makedirs(PASTA_SAIDA, exist_ok=True)
 

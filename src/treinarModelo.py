@@ -6,13 +6,13 @@ from ultralytics import YOLO
 # CONFIGURAÇÕES
 # ==========================================
 
-ARQUIVO_DATASET = "dataset/data.yaml"
+ARQUIVO_DATASET = "dataset_person/data.yaml"
 
 MODELO_INICIAL = "yolo11n.pt"
 
-EPOCAS = 30
+EPOCAS = 10
 
-TAMANHO_IMAGEM = 480
+TAMANHO_IMAGEM = 320
 
 BATCH_SIZE = 2
 
@@ -54,7 +54,7 @@ resultado = modelo.train(
 
     project="runs",
 
-    name="Modelo2",
+    name="Modelo3",
 
     plots=True,
 
@@ -77,10 +77,10 @@ print("================================")
 
 print(
     "Melhor modelo: "
-    "runs/detect/Modelo2/weights/best.pt"
+    "runs/detect/Modelo3/weights/best.pt"
 )
 
 print(
     "Último modelo: "
-    "runs/detect/Modelo2/weights/last.pt"
+    "runs/detect/Modelo3/weights/last.pt"
 )

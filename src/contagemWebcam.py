@@ -7,9 +7,9 @@ from ultralytics import YOLO
 # CONFIGURACOES
 # ==========================================
 
-MODEL_PATH = "runs/detect/runs/Modelo2/weights/best.pt"
+MODEL_PATH = "runs/detect/runs/Modelo3/weights/best.pt"
 
-IMG_SIZE = 480
+IMG_SIZE = 320
 CONFIDENCE = 0.25
 
 # Distancia de seguranca ao redor da linha

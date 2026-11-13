@@ -1,10 +1,17 @@
 venv/
 
-/dataset/images
-/dataset/labels
+/dataset_old/images
+/dataset_old/labels
+
+/dataset_person/train
+/dataset_person/test
+/dataset_person/valid
+
+/dataset
 
 *.zip
 
 *.mp4
 
 imagens_brutas/
+
