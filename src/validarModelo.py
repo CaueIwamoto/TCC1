@@ -2,13 +2,13 @@
 from ultralytics import YOLO
 
 # Carregar o melhor modelo treinado
-modelo = YOLO("runs/detect/runs/Modelo5/weights/best.pt")
+modelo = YOLO("runs/detect/runs/Modelo6/weights/best.pt")
 
 # Realizar validação no conjunto de teste
 resultados = modelo.val(
     data="dataset_person/data.yaml",
     split="test",
-    imgsz=240,
+    imgsz=640,
     batch=4,
     device="cpu",
     workers=0

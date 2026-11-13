@@ -123,6 +123,28 @@ Observações (Modelos 4 e 5):
 - Esses dois modelos foram para comparar a diferença que a resolução faz, mas acho que não teve muita, pelo menos com os valores que eu usei
 - Acho que o problema não é o dataset, e sim os parâmetros
 
+<br>
+
+### Modelo 6
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person (Dataset próprio) |
+| Modelo  | YOLO11n  |
+| Épocas | 30 |
+| Tamanho da Imagem | 640 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.7630 |
+| Recall | 0.7578 |
+| F1-score | 0.7604 |
+
+Observações:
+- Continua igual, acho que chegou a hora de achar um dataset bom ou fazer um melhor...
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 

@@ -7,6 +7,8 @@ venv/
 /dataset_person/test
 /dataset_person/valid
 
+/dataset_kaggle
+
 /dataset
 
 *.zip
