@@ -80,6 +80,49 @@ Observações:
 - Esse foi nosso primeiro modelo que usa um dataset próprio. Fiz com poucas épocas, batch, etc. porque só queria testar se era eficaz
 - Os resultados não foram muito bons. Toda hora, o modelo detectava várias pessoas em um mesmo lugar, quando realmente havia apenas uma. Mesmo assim, foi bom para ver que um dataset próprio provavelmente é a solução
 
+<br>
+
+### Modelo 4
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person (Dataset próprio) |
+| Modelo  | YOLO11n  |
+| Épocas | 30 |
+| Tamanho da Imagem | 480 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.7745 |
+| Recall | 0.6471 |
+| F1-score | 0.7051 |
+
+<br>
+
+### Modelo 5
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person (Dataset próprio) |
+| Modelo  | YOLO11n  |
+| Épocas | 30 |
+| Tamanho da Imagem | 240 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.7582 |
+| Recall | 0.7647 |
+| F1-score | 0.7614 |
+
+Observações (Modelos 4 e 5):
+- Nenhum dos dois modelos melhorou muito comparados com o 3
+- Esses dois modelos foram para comparar a diferença que a resolução faz, mas acho que não teve muita, pelo menos com os valores que eu usei
+- Acho que o problema não é o dataset, e sim os parâmetros
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 
