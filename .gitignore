@@ -1,15 +1,6 @@
 venv/
 
-/dataset_old/images
-/dataset_old/labels
-
-/dataset_person/train
-/dataset_person/test
-/dataset_person/valid
-
-/dataset_kaggle
-
-/dataset
+/datasets
 
 *.zip
 

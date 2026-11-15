@@ -7,13 +7,13 @@ import shutil
 from pathlib import Path
 
 # Caminho do dataset original
-dataset_dir = Path("dataset zoado")
+dataset_dir = Path("dataset_kaggle")
 
 images_dir = dataset_dir / "images"
 labels_dir = dataset_dir / "labels"
 
 # Caminho do novo dataset
-output_dir = Path("dataset")
+output_dir = Path("dataset_kaggle_melhor")
 
 # Proporções
 train_ratio = 0.70

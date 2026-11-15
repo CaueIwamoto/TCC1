@@ -145,6 +145,8 @@ Observações (Modelos 4 e 5):
 Observações:
 - Continua igual, acho que chegou a hora de achar um dataset bom ou fazer um melhor...
 
+<br>
+
 ### Modelo 7
 
 | Parâmetro | Valor utilizado |
@@ -159,6 +161,28 @@ Observações:
 Observações:
 - Ruim demais, vale nem a pena elaborar
 
+<br>
+
+### Modelo 8
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Human head detection OpenVM + C270 |
+| Modelo  | YOLO11n  |
+| Épocas | 50 |
+| Tamanho da Imagem | 640 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.8656 |
+| Recall | 0.8098 |
+| F1-score | 0.8368 |
+
+Observações:
+- Separei o dataset em 70 15 15 e aumentei a resolução, mas parece não ter mudado nada...
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 
@@ -168,3 +192,8 @@ Observações:
 
 ## Site de anotação
 [annotation.photo](https://annotate.photo/)
+
+## Explicação das pastas datasets
+- dataset_person: Nosso dataset gravado em sala, com as imagens brutas e sem divisão
+- dataset_kaggle: Human head detection OpenVM + C270 sem divisão
+- dataset_overhead: Overhead person model, com divisão
