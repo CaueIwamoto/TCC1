@@ -145,6 +145,20 @@ Observações (Modelos 4 e 5):
 Observações:
 - Continua igual, acho que chegou a hora de achar um dataset bom ou fazer um melhor...
 
+### Modelo 7
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Human head detection OpenVM + C270 |
+| Modelo  | YOLO11n  |
+| Épocas | 50 |
+| Tamanho da Imagem | 320 |
+| Batch Size | 8 |
+| Paciência | 8 |
+
+Observações:
+- Ruim demais, vale nem a pena elaborar
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 
