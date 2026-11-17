@@ -7,7 +7,7 @@ from contador import ContadorDirecional
 
 
 # Carrega o modelo treinado
-modelo = YOLO("runs/detect/runs/treinamento_rapido/weights/best.pt")
+modelo = YOLO("runs/detect/runs/Modelo3/weights/best.pt")
 
 # Inicializa a webcam
 camera = cv2.VideoCapture(0)
@@ -44,7 +44,7 @@ while True:
     resultados = modelo.predict(
         source=frame,
         conf=CONFIANCA,
-        imgsz=320,
+        imgsz=480,
         device="cpu",
         verbose=False
     )

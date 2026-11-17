@@ -1,9 +1,9 @@
 
-path: dataset
+path: dataset_colorido_grande
 
 train: images/train
 val: images/val
 test: images/test
 
 names:
-  0: cabeca
+  0: bolinha

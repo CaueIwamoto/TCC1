@@ -11,9 +11,9 @@ ARQUIVO_DATASET = "data.yaml"
 
 MODELO_INICIAL = "yolo11n.pt"
 
-EPOCAS = 15
+EPOCAS = 50
 
-TAMANHO_IMAGEM = 320
+TAMANHO_IMAGEM = 480
 
 BATCH_SIZE = 4
 
@@ -49,9 +49,9 @@ resultado = modelo.train(
 
     project="runs",
 
-    name="treinamento_rapido",
+    name="Modelo3",
 
-    patience=5,
+    patience=10,
 
     workers=0,
 
@@ -76,11 +76,11 @@ print("================================")
 print("\nMelhor modelo salvo em:")
 
 print(
-    Path("runs/detect/treinamento_rapido/weights/best.pt")
+    Path("runs/detect/runs/Modelo3/weights/best.pt")
 )
 
 print("\nPesos finais salvos em:")
 
 print(
-    Path("runs/detect/treinamento_passageiros/weights/last.pt")
+    Path("runs/detect/runs/Modelo3/weights/last.pt")
 )
