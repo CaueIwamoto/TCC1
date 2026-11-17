@@ -183,6 +183,44 @@ Observações:
 Observações:
 - Separei o dataset em 70 15 15 e aumentei a resolução, mas parece não ter mudado nada...
 
+<br>
+
+### Modelo 9
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person + Human head detection OpenVM + C270 |
+| Modelo  | YOLO11n  |
+| Épocas | 50 |
+| Tamanho da Imagem | 640 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.8905 |
+| Recall | 0.8711 |
+| F1-score | 0.8807 |
+
+<br>
+
+### Modelo 10
+
+| Parâmetro | Valor utilizado |
+| ------------- | ------------- |
+| Dataset  | Dataset Person + Human head detection OpenVM + C270 |
+| Modelo  | YOLO11n  |
+| Épocas | 50 |
+| Tamanho da Imagem | 144 |
+| Batch Size | 4 |
+| Paciência | 8 |
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.8814 |
+| Recall | 0.8104 |
+| F1-score | 0.8444 |
+
 ## Datasets maneiros
 [Top View People](https://universe.roboflow.com/top-view-pedestrians/top-view-people)
 

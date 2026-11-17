@@ -6,13 +6,13 @@ from ultralytics import YOLO
 # CONFIGURAÇÕES
 # ==========================================
 
-ARQUIVO_DATASET = "dataset_kaggle_melhor/data.yaml"
+ARQUIVO_DATASET = "dataset_person_kaggle/data.yaml"
 
 MODELO_INICIAL = "yolo11n.pt"
 
 EPOCAS = 50
 
-TAMANHO_IMAGEM = 640
+TAMANHO_IMAGEM = 144
 
 BATCH_SIZE = 4
 
@@ -54,7 +54,7 @@ resultado = modelo.train(
 
     project="runs",
 
-    name="Modelo8",
+    name="Modelo10",
 
     plots=True,
 
@@ -77,10 +77,10 @@ print("================================")
 
 print(
     "Melhor modelo: "
-    "runs/detect/Modelo8/weights/best.pt"
+    "runs/detect/Modelo10/weights/best.pt"
 )
 
 print(
     "Último modelo: "
-    "runs/detect/Modelo8/weights/last.pt"
+    "runs/detect/Modelo10/weights/last.pt"
 )

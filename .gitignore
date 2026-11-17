@@ -1,6 +1,7 @@
 venv/
 
 /datasets
+/dataset_person_kaggle
 
 *.zip
 

@@ -7,7 +7,7 @@ from ultralytics import YOLO
 # CONFIGURACOES
 # ==========================================
 
-MODEL_PATH = "runs/detect/runs/Modelo7/weights/best.pt"
+MODEL_PATH = "runs/detect/runs/Modelo10/weights/best.pt"
 
 IMG_SIZE = 320
 CONFIDENCE = 0.25
@@ -36,7 +36,6 @@ ids_contabilizados = set()
 # INICIAR WEBCAM E RASTREAMENTO
 # ==========================================
 
-# source é qual câmera usar. 0 = webcam externa, 1 = webcam do computador
 resultados = modelo.track(
     source=0,
     stream=True,
