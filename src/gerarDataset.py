@@ -11,14 +11,14 @@ from pathlib import Path
 LARGURA = 640
 ALTURA = 480
 
-TOTAL_IMAGENS = 500
+TOTAL_IMAGENS = 1500
 
-DIRETORIO_DATASET = Path("dataset_colorido_peq")
+DIRETORIO_DATASET = Path("datasets/dataset_colorido_gnd")
 
 DIVISAO = {
-    "train": 350,
-    "val": 75,
-    "test": 75
+    "train": 1050,
+    "val": 225,
+    "test": 225
 }
 
 
