@@ -24,10 +24,27 @@ Observações:
 <br>
 
 # Datasets
-- dataset_colorido_peq:
+## dataset_colorido_peq:
+- ablublublebl
+- ncjwnjecew
+
 | Resultado | Valor |
 |-|-|
 | Precisão | 0.9566 |
 | Recall | 0.9573 |
 | mAP50 | 0.9694 |
 | mAP50-95 | 0.5637 |
+
+<br>
+
+## dataset_colorido_peq:
+- ablublublebl
+- ncjwnjecew
+
+| Resultado | Valor |
+|-|-|
+| Precisão | 0.9566 |
+| Recall | 0.9573 |
+| mAP50 | 0.9694 |
+| mAP50-95 | 0.5637 |
+
