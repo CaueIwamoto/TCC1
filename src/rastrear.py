@@ -98,7 +98,6 @@ while True:
                     if (
                         lado_anterior == "acima"
                         and lado_atual == "abaixo"
-                        and id_objeto not in ids_contabilizados
                     ):
                         contador += 1
                         ids_contabilizados.add(id_objeto)
@@ -109,7 +108,6 @@ while True:
                     elif (
                         lado_anterior == "abaixo"
                         and lado_atual == "acima"
-                        and id_objeto not in ids_contabilizados
                     ):
                         contador -= 1
                         ids_contabilizados.add(id_objeto)
