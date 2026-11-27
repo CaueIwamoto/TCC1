@@ -6,9 +6,9 @@ from ultralytics import YOLO
 # CONFIGURAÇÕES
 # ==========================================
 
-MODEL_PATH = "models/best.pt"
+MODEL_PATH = "runs/detect/models/Modelo1/weights/best.pt"
 
-CAMERA_INDEX = 0
+CAMERA_INDEX = 1
 
 LARGURA = 640
 ALTURA = 480

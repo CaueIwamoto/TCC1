@@ -2,6 +2,8 @@ from ultralytics import YOLO
 
 model = YOLO("yolo11n.pt")
 
+print("Iniciando treinamento...")
+
 model.train(
     data="dataset_colorido_peq/data.yaml",
     epochs=15,
