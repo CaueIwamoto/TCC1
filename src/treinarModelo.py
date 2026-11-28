@@ -5,7 +5,7 @@ model = YOLO("yolo11n.pt")
 print("Iniciando treinamento...")
 
 model.train(
-    data="dataset_colorido_gnd/data.yaml",
+    data="datasets/dataset_colorido_gnd/data.yaml",
     epochs=35,
     imgsz=320,
     batch=4,
